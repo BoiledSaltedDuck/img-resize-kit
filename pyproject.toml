@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "img-resize-kit"
+version = "1.0.0"
+description = "图片批量缩放与压缩工具 - 批量调整图片尺寸、压缩图片大小、查看图片信息"
+readme = "README.md"
+authors = [
+    {name = "BoiledSaltedDuck", email = "tools@office-tools.pro"}
+]
+license = {text = "MIT"}
+keywords = ["image", "resize", "compress", "图片缩放", "图片压缩", "batch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "Pillow>=9.0",
+]
+
+[project.scripts]
+img-resize = "img_resize.resizer:main"
+
+[tool.setuptools.packages.find]
+include = ["img_resize*"]

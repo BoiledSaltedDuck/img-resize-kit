@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+img_resize/__init__.py
+img_resize/resizer.py
+img_resize_kit.egg-info/PKG-INFO
+img_resize_kit.egg-info/SOURCES.txt
+img_resize_kit.egg-info/dependency_links.txt
+img_resize_kit.egg-info/entry_points.txt
+img_resize_kit.egg-info/requires.txt
+img_resize_kit.egg-info/top_level.txt
